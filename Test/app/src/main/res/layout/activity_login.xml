@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/coolbg"
+        android:scaleType="fitXY"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alertTitle"
+            android:textSize="25dp"
+            android:text="Please login to the app with your details"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/roundedtext"
+            android:layout_weight=".75"
+            android:layout_below="@+id/alertTitle"
+            android:id="@+id/username"
+            android:layout_marginTop="15dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/roundedtext"
+            android:layout_weight=".75"
+            android:layout_below="@+id/username"
+            android:id="@+id/password"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textSize="15dp"
+            android:textAlignment="center"
+
+            />
+
+        <Button
+            android:id="@+id/playbutton"
+
+            android:text="submit"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonborder"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="50dp"
+
+            android:onClick="login"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/coolbg2"
+        android:scaleType="fitXY"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        >
+
+    <EditText
+
+        android:id="@+id/et1"
+        android:inputType="text"
+        android:hint="Enter your name"
+
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/roundedtext"
+        android:layout_weight=".75"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/roundedtext"
+        android:layout_weight=".75"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:textSize="15dp"
+        android:textAlignment="center"
+
+        android:id="@+id/et2"
+        android:hint="Enter your mobile number"
+        android:layout_below="@+id/et1"
+        android:inputType="phone"/>
+
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/roundedtext"
+        android:layout_weight=".75"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:textSize="15dp"
+        android:textAlignment="center"
+
+        android:id="@+id/et3"
+        android:hint="Enter your email address"
+        android:layout_below="@+id/et2"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/roundedtext"
+        android:layout_weight=".75"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textAlignment="center"
+
+        android:id="@+id/et4"
+        android:hint="Enter description"
+        android:layout_below="@+id/et3"
+        android:inputType="textAutoCorrect"/>
+
+    <Button
+
+        android:id="@+id/btn1"
+        android:text="Submit the issue"
+        android:layout_below="@+id/et4"
+
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonborder"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+
+        />
+
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/iv1"
+        android:layout_below="@+id/btn1"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

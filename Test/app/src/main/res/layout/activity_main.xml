@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <Button
+            android:id="@+id/justdoit"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+
+            android:text="Just do it"
+            android:textSize="31sp"
+            android:background="@drawable/buttonborder"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/nofees"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+
+            android:layout_toRightOf="@+id/justdoit"
+            android:text="Notify officials"
+            android:textSize="30sp"
+            android:background="@drawable/buttonborder"
+            android:textColor="#ffffff"
+
+            />
+
+        <Button
+            android:id="@+id/list"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+
+            android:text="Project \n List"
+            android:textSize="31sp"
+            android:layout_below="@id/justdoit"
+            android:background="@drawable/buttonborder"
+            android:textColor="#ffffff"
+
+            />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+
+            android:layout_toRightOf="@+id/justdoit"
+            android:layout_below="@+id/nofees"
+            android:text="Exit"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+
+
+            android:onClick="exit"
+            android:background="@drawable/buttonborder"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
